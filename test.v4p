@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta41.dtd" >
-   <PATCH nodename="E:\work\LFStest\test.v4p">
-   <BOUNDS type="Window" left="-28020" top="1320" width="9000" height="9000">
+   <PATCH nodename="E:\work\LFS\LFStest\test.v4p">
+   <BOUNDS type="Window" left="-16260" top="1275" width="9000" height="9000">
    </BOUNDS>
    <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2880" top="3855" width="100" height="100">
@@ -89,5 +89,29 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="4" srcpinname="Output" dstnodeid="5" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Self (VVVV)" nodename="Self (VVVV)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="360" top="1545" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Query Save" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7">
+   <BOUNDS type="Box" left="450" top="660" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="450" top="660" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Query Save">
    </LINK>
    </PATCH>
