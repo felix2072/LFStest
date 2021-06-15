@@ -1,9 +1,13 @@
-"C:\Programme\Git\cmd\git.exe" pull --progress "origin"
+call "C:\Programme\Git\cmd\git.exe" pull --progress "origin"
 
-Timeout 3
+call Timeout 3
 
-.\killVVVV.bat
+call TASKKILL /F /IM vvvv.exe
 
-Timeout 3
+call Timeout 3
 
-.\test.v4p
+call .\test.v4p
+
+call Timeout 3
+
+call TASKKILL /F /IM cmd.exe
