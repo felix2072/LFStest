@@ -53,7 +53,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3795" top="2835" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -65,7 +65,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Pause">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Pause">
