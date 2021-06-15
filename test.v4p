@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta41.dtd" >
-   <PATCH nodename="E:\work\LFStest\test.v4p">
-   <BOUNDS type="Window" left="11880" top="2145" width="9000" height="9000">
+   <PATCH nodename="E:\work\LFS\LFStest\test.v4p">
+   <BOUNDS type="Window" left="-16260" top="1275" width="9000" height="9000">
    </BOUNDS>
    <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2880" top="3855" width="100" height="100">
@@ -53,7 +53,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3795" top="2835" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -62,6 +62,10 @@
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Pause">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Pause">

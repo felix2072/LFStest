@@ -127,3 +127,4 @@ Cache/
 /noGammaProject/**/obj
 /noGammaProject/**/Bin
 *.vl.dll
+*~.xml
