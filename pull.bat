@@ -1,13 +1,17 @@
-call "C:\Programme\Git\cmd\git.exe" pull --progress "origin"
+"C:\Programme\Git\cmd\git.exe" pull --progress "origin"
 
-call Timeout 3
+Timeout 3
 
-call TASKKILL /F /IM vvvv.exe
+TASKKILL /F /IM vvvv.exe
 
-call Timeout 3
+Timeout 3
 
-call .\test.v4p
+start c:\vvvv\vvvv_beta_41_x64\vvvv.exe /allowmultiple /o %~dp0test.v4p
 
-call Timeout 3
+Timeout 3
 
-call TASKKILL /F /IM cmd.exe
+start c:\vvvv\vvvv_beta_41_x64\vvvv.exe /allowmultiple /o %~dp0color.v4p
+
+Timeout 3
+
+TASKKILL /F /IM cmd.exe
